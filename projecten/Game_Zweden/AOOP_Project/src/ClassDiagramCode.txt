@@ -1,0 +1,115 @@
+@startuml
+package domain{
+class ConsoleView
+class Controller
+class Crate
+class GameBoard
+class GuiView
+enum MoveDirection
+enum MoveType
+interface ViewStrategy
+class Tile
+}
+
+package gui{
+class BeginScreen
+class GameBoardScreen
+interface GameboardObserver 
+}
+
+package main{
+class StartUp
+}
+
+package sound{
+class SoundController
+interface ActionObserver
+}
+ConsoleView ..|> ViewStrategy
+ConsoleView : updateView(Controller)
+
+ViewStrategy : updateView(Controller)
+
+Controller o-- GameboardObserver
+Controller o-- ActionObserver
+Controller ..> ViewStrategy
+Controller o-- Crate
+Controller ..> GameBoard
+Controller : int px, py
+Controller : int selected level
+Controller : boolean keyboardOn
+Controller : boolean gameWon
+Controller : setViewStrategy(ViewStrategy vs)
+Controller : checkEndConditions()
+Controller : loadBoard()
+Controller : attachGameboardObserver(GameboardObserver)
+Controller : attachMoveObserver(ActionObserver)
+Controller : updateView()
+Controller : playSound(MoveType)
+Controller : movePlayer(MoveDirection)
+Controller : loadLevel(int)
+Controller : saveGame()
+Controller : resetGameboard()
+
+Crate : Tuple<Integer> pos
+Crate : boolean in_position
+Crate : isIn_position()
+
+GameBoard : Tuple<Integer> dimensions;
+GameBoard o-- Tile
+GameBoard : toString()
+GameBoard : writeObject()
+GameBoard : readObject()
+
+GuiView ..|> ViewStrategy
+GuiView : updateView(Controller)
+
+MoveDirection : UP
+MoveDirection : DOWN
+MoveDirection : LEFT
+MoveDirection : RIGHT
+
+MoveType : WALK
+MoveType : PUSH
+MoveType : BLOCKED
+MoveType : PLACE
+MoveType : WIN
+MoveType : CLICK
+MoveType : NONE
+
+Tile : boolean is_wall
+Tile : boolean is_ppos
+Tile : boolean is_cpos
+Tile : boolean is_marked
+Tile : verifyConfig()
+Tile : toString()
+
+ViewStrategy : updateView(Controller)
+
+BeginScreen --> Controller : set level, loadBoard()
+BeginScreen : LevelSelector
+BeginScreen : JButton keyBoardButton
+BeginScreen : JButton loadButton
+BeginScreen : JButton continueButton
+BeginScreen --> GameBoardScreen : starts
+
+GameBoardScreen ..|> GameboardObserver
+GameBoardScreen --> Controller : setViewStrategy()
+GameBoardScreen : OptionsPanel
+GameBoardScreen : GameBoardPanel
+GameBoardScreen : ButtonsPanel
+GameBoardScreen : ControlSavePanel
+GameBoardScreen : Controller
+GameBoardScreen : update(GameBoard)
+
+StartUp --> Controller : starts
+StartUp --> SoundController : starts
+StartUp --> BeginScreen : starts
+
+SoundController ..|> ActionObserver
+SoundController : playSound(MoveType)
+
+ActionObserver : playSound(MoveType)
+
+GameboardObserver : update(GameBoard)
+@enduml

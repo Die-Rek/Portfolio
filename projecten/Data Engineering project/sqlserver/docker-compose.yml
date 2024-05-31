@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  sqlserver:
+    container_name: sqlserver-db
+    image: sqlserver-image
+    build:
+      context: .
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "Password123*"
+      ACCEPT_EULA: "Y"
+    volumes:
+      - sqlvolume:/var/opt/mssql
+volumes:
+  sqlvolume:
+    driver: local
+# Run: docker-compose up -d
+# Stop: docker-compose down
+
+# Sources:
+# https://blog.logrocket.com/docker-sql-server/
