@@ -1,69 +1,111 @@
 const Joi = require('joi');
 
 const JOI_OPTIONS = {
-    abortEarly: true, // stop validatie bij eerste fout
-    allowUnkown: false, // geen onbekende velden toelaten
-    context: true, //hebben we nodig voor Joi.ref
-    convert: true, // waarden casten naar verwachte waarde
-    presence: 'required', // alle velden zijn verplicht
-}
+  abortEarly: true,
+  allowUnknown: false,
+  convert: true,
+  context: true,
+  presence: 'required',
+};
 
-const cleanupJoiError = (error) => error.details.reduce((resultObj, {
-	message,
-	path,
-	type,
+const cleanupJoiError = (error) => error.details.reduce((resultObj,{
+  message,
+  path,
+  type,
 }) => {
-	const joinedPath = path.join('.') || 'value';
-	if (!resultObj[joinedPath]) {
-		resultObj[joinedPath] = [];
-	}
-	resultObj[joinedPath].push({
-		type,
-		message,
-	});
-
-	return resultObj;
+  const joinedPath = path.join('.') || 'value';
+  if (!resultObj[joinedPath]){
+    resultObj[joinedPath] = [];
+  }
+  resultObj[joinedPath].push({
+    type,
+    message,
+  });
+  return resultObj;
 }, {});
 
-const validate= (schema) => {
-    if(!schema) { // request zonder iets -> validate(null) als middleware gebruiken
-        schema = {
-            query :{},
-            body: {},
-            params: {} // <- nu enkel dit
-        }
+const validate = (schema) => {
+  if (!schema){
+    schema = {
+      params: {},
+      query: {},
+      body: {},
+    };
+  }
+
+
+  //verkorten!
+  return (ctx, next) => {
+    const errors = {};
+    if (schema.query){
+      if (!Joi.isSchema(schema.query)) {
+        schema.query = Joi.object(schema.query);
+      }
+
+      const {
+        error: queryErrors,
+        value: queryValue,
+      } = schema.query.validate(
+        ctx.query,
+        JOI_OPTIONS,
+      );
+
+      if (queryErrors) {
+        errors.query = cleanupJoiError(queryErrors);
+      } else {
+        ctx.query = queryValue;
+      }
+    }
+    if (schema.body) {
+      if (!Joi.isSchema(schema.body)) {
+        schema.body = Joi.object(schema.body);
+      }
+    
+      const {
+        error: bodyErrors,
+        value: bodyValue,
+      } = schema.body.validate(
+        ctx.request.body,
+        JOI_OPTIONS,
+      );
+    
+      if (bodyErrors) {
+        errors.body = cleanupJoiError(bodyErrors);
+      } else {
+        ctx.request.body = bodyValue;
+      }
     }
 
-    return (ctx, next) => {
-        const errors = {} //response body indeien validatie gefaald is
-        if (!Joi.isSchema(schema.body)) {//indien geen schema er één maken
-            // als params undefined: {} gebruiken
-            schema.body = Joi.object(schema.body || {});
-        }
-        return next() // kom niet meer terug in deze middleware
-    }
-
-    const {
-        error: paramsError,
-        value: paramsValue
-    } = schema.body.validate(
+    if (schema.params) {
+      if (!Joi.isSchema(schema.params)) {
+        schema.params = Joi.object(schema.params);
+      }
+    
+      const {
+        error: paramsErrors,
+        value: paramsValue,
+      } = schema.params.validate(
         ctx.params,
         JOI_OPTIONS,
-    )
-
-    if (paramsError) {
-        errors.body = cleanopJoiErrors(paramsError);
-    } else {
-        ctx.body = paramsValue; //mogelijks dingen gecast
+      );
+    
+      if (paramsErrors) {
+        errors.params = cleanupJoiError(paramsErrors);
+      } else {
+        ctx.params = paramsValue;
+      }
     }
 
-    if (Object.keys(errors).length > 0) {
-        ctx.throw(400, 'Validation failed, check details for more information'), {
+
+    if (Object.keys(errors).length > 0){
+      ctx.throw(400, 'Validation failed', {
         code: 'VALIDATION_FAILED',
-        details: errors
+        details: errors,
+      });
     }
-}
-}
-module.exports=(
-    validate
-)
+
+    return next();
+  };
+};
+
+module.exports = validate;

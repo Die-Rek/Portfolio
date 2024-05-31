@@ -6,35 +6,33 @@
 - [ ] Front-end Web Development
   - [GitHub repository](github.com/HOGENT-Web)
   - [Online versie](github.com/HOGENT-Web)
-- [ ] Web Services: GITHUB URL
-  - [GitHub repository](github.com/HOGENT-Web)
-  - [Online versie](github.com/HOGENT-Web)
+- [x] Web Services:
+  - [GitHub repository](https://github.com/Web-IV/2223-webservices-Sdierick20)
+  - [Online versie](https://two223-webservices-sdierick20.onrender.com)
 
-**Logingegevens**
-
-- Gebruikersnaam/e-mailadres:
-- Wachtwoord:
-
-> Vul eventueel aan met extra accounts voor administrators of andere rollen.
 
 ## Projectbeschrijving
 
-> Omschrijf hier duidelijk waarover jouw project gaat. Voeg een domeinmodel (of EERD) toe om jouw entiteiten te verduidelijken.
+> De API zou een webshop ondersteunen die AI modellen verkoopt. De meeste modellen worden op maat gemaakt maar enkele basismodellen zullen meerdere malen te verkrijgen zijn.
 ```kroki-Erd
 [AI]
 *id
 'Learning method'
 'Training time'
 'activation key'
+'unit Price'
 
 [Order]
 *id
-AIid
 Userid
-Amount
 'Order date'
 'Delivery date'
 'Payment method'
+
+[orderDetails]
+*orderId
+*AIid
+prodAmount
 
 [User]
 *id
@@ -43,17 +41,13 @@ naam
 'e-mail'
 
 Order *--1 User
-AI +--1 Order
+Order 1--* orderDetails
+orderDetails *--* AI
 ```
-
-
-## Screenshots
-
-> Voeg enkele (nuttige!) screenshots toe die tonen wat de app doet.
+![ERD](./images/ERD.png)
 
 ## Behaalde minimumvereisten
 
-> Duid per vak aan welke minimumvereisten je denkt behaald te hebben
 
 ### Front-end Web Development
 
@@ -95,60 +89,65 @@ AI +--1 Order
 
 - **datalaag**
 
-  - [ ] voldoende complex (meer dan één tabel)
-  - [ ] één module beheert de connectie + connectie wordt gesloten bij sluiten server
-  - [ ] heeft migraties
-  - [ ] heeft seeds
+  - [x] voldoende complex (meer dan één tabel)
+  - [x] één module beheert de connectie + connectie wordt gesloten bij sluiten server
+  - [x] heeft migraties
+  - [x] heeft seeds
 <br />
 
 - **repositorylaag**
 
-  - [ ] definieert één repository per entiteit (niet voor tussentabellen) - indien van toepassing
-  - [ ] mapt OO-rijke data naar relationele tabellen en vice versa
+  - [x] definieert één repository per entiteit (niet voor tussentabellen) - indien van toepassing
+  - [x] mapt OO-rijke data naar relationele tabellen en vice versa
 <br />
 
 - **servicelaag met een zekere complexiteit**
 
-  - [ ] bevat alle domeinlogica
-  - [ ] bevat geen SQL-queries of databank-gerelateerde code
+  - [x] bevat alle domeinlogica
+  - [x] bevat geen SQL-queries of databank-gerelateerde code
 <br />
 
 - **REST-laag**
 
-  - [ ] meerdere routes met invoervalidatie
-  - [ ] degelijke foutboodschappen
-  - [ ] volgt de conventies van een RESTful API
-  - [ ] bevat geen domeinlogica
-  - [ ] degelijke authorisatie/authenticatie op alle routes
+  - [x] meerdere routes met invoervalidatie
+  - [x] degelijke foutboodschappen
+  - [x] volgt de conventies van een RESTful API
+  - [x] bevat geen domeinlogica
+  - [x] degelijke authorisatie/authenticatie op alle routes
 <br />
 
 - **varia**
-  - [ ] een aantal niet-triviale testen (min. 1 controller >=80% coverage)
-  - [ ] minstens één extra technologie
-  - [ ] duidelijke en volledige `README.md`
-  - [ ] maakt gebruik van de laatste ES6-features (object destructuring, spread operator...)
-  - [ ] volledig en tijdig ingediend dossier
+  - [x] een aantal niet-triviale testen (min. 1 controller >=80% coverage)
+  - [x] minstens één extra technologie
+  - [x] duidelijke en volledige `README.md`
+  - [x] maakt gebruik van de laatste ES6-features (object destructuring, spread operator...)
+  - [x] volledig en tijdig ingediend dossier
 
 
 ## Projectstructuur
 
 ### Front-end Web Development
 
-> Hoe heb je jouw applicatie gestructureerd (mappen, design patterns, hiërarchie van componenten, state...)?
 
 ### Web Services
 
-> Hoe heb je jouw applicatie gestructureerd (mappen, design patterns...)?
+> De webservice maakt gebruik van 4 hoofdmappen: data, repository, service en rest. 
+In de datamap staan de migrations en de seeds voor de databank net zoals een `index.js` file die de connectie met de databank beheert.  
+In de repositorymap worden de query's uitgevoerd op de databank en omgezet worden naar een handig formaat om mee aan het werk te gaan. Hier staan volgende bestanden in: `AI.js`, `user.js` en `order.js` en dus geen map voor de tussentabel.  
+In de service map wordt de repository aangeroepen met de juist gemapte data en als er een fout optreed zal deze juist afgehandeld worden.  
+in de rest map komen de verzoeken binnen en zullen ze geroute worden naar de juiste functie om zo verder de service aan te spreken voor de juiste data uit de databank. Hier zal de input eerst gevalideerd worden en checken of je wel toegang hebt tot de juiste operaties.  
+Daarnaast is er een core map die de authorisatie, logging en serviceErrors afhandeld.  
+daarnaast zijn er ook nog testen voor elke tabel van de databank (behalve tussentabel).
+
 
 ## Extra technologie
 
 ### Front-end Web Development
 
-> Wat is de extra technologie? Hoe werkt het? Voeg een link naar het npm package toe!
 
 ### Web Services
 
-> Wat is de extra technologie? Hoe werkt het? Voeg een link naar het npm package toe!
+> De testen zijn geschreven in Mocha en chai. Er is linting toegepast op de code. API documentatie in swagger.
 
 ## Testresultaten
 
@@ -158,26 +157,19 @@ AI +--1 Order
 
 ### Web Services
 
-> Schrijf hier een korte oplijsting en beschrijving van de geschreven testen + voeg een screenshot van de coverage en uitvoering toe
+> Er zijn testen geschreven voor elke CRUD operatie bij slagen en falen. De testen zijn bedoeld om meer dan 80% coverage te halen op elk bestand.  
+Door een bug met axios dat ik niet opgelost krijg kan ik amper nog testen uitvoeren. Onderstaand screenshot is met de testen op orders en 1 test op user. De testen zijn toch aangevuld en in elk repositorybestand zou er een coverage moeten zijn van meer dan 80% mocht de bug opgelost zijn.
+![Coverage van de orders](./images/coverageOrder.png)  
+![alegemene Coverage](./images/algemeneCoverage.png)
 
 ## Gekende bugs
 
 ### Front-end Web Development
 
-> Zijn er gekende bugs?
 
 ### Web Services
 
-> Zijn er gekende bugs?
+> status code 429 bij het runnen van de testen.  
+Datum kan een dag verspringen.  
+Swagger geeft een error bij het testen van de API en toont geen voorbeeld van orders.
 
-## Wat is er verbeterd/aangepast?
-
-> Deze sectie is enkel voor 2e zittijd, verwijder deze in 1e zittijd.
-
-### Front-end Web Development
-
-- Dit en dat
-
-### Web Services
-
-- Oh en dit ook

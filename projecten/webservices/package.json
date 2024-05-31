@@ -1,21 +1,61 @@
 {
+  "name": "webservices-sdierick",
+  "mocha": {
+    "testPathIgnorePatterns": [
+      "src",
+      "node_modules",
+      "config"
+    ]
+  },
   "scripts": {
-    "start": "npx env-cmd nodemon src/index.js"
+    "start": "npx env-cmd nodemon src/index.js",
+    "start:prod": "node src/index.js",
+    "test": "npx env-cmd -f .env.test mocha --recursive \"./*test*/*/*.js\" --timeout 10000",
+    "test:coverage": "nyc --reporter=html env-cmd -f .env.test mocha --recursive \"./*test*/*/*.js\" --timeout 10000",
+    "lint": "npx eslint --fix"
+  },
+  "nodemonConfig": {
+    "signal": "SIGTERM",
+    "ignore": [
+      "node_modules/*",
+      ".vscode/*"
+    ],
+    "delay": "80",
+    "watch": [
+      "config",
+      "src"
+    ],
+    "ext": "js,json",
+    "legacyWatch": true,
+    "exec": "node --inspect=0.0.0.0:9000 --trace-warnings src/index.js"
   },
   "dependencies": {
     "@koa/router": "^12.0.0",
-    "bunyan": "^1.8.15",
-    "bunyan-windows-eventlog": "^1.0.4",
+    "axios": "^1.2.1",
     "config": "^3.3.8",
     "env-cmd": "^10.1.0",
     "joi": "^17.7.0",
+    "jwks-rsa": "^3.0.0",
+    "knex": "^2.3.0",
     "koa": "^2.13.4",
     "koa-bodyparser": "^4.3.0",
-    "node-emoji": "^1.11.0",
+    "koa-jwt": "^4.0.3",
+    "koa2-swagger-ui": "^5.6.0",
+    "mysql2": "^2.3.3",
+    "request": "^2.88.2",
+    "serialize-error": "8.1.0",
+    "swagger-jsdoc": "^6.2.7",
     "winston": "^3.8.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.20"
+    "chai": "^4.3.7",
+    "eslint": "^8.30.0",
+    "eslint-plugin-import": "^2.26.0",
+    "mocha": "^10.2.0",
+    "mocha-each": "^2.0.1",
+    "nodemon": "^2.0.20",
+    "nyc": "^15.1.0",
+    "supertest": "^6.3.3"
   },
-  "version": "0.0.0"
+  "version": "0.0.1"
 }

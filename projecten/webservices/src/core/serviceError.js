@@ -4,46 +4,45 @@ const UNAUTHORIZED = 'UNAUTHORIZED';
 const FORBIDDEN = 'FORBIDDEN';
 
 class ServiceError extends Error{
-    
-    constructor(code, message, details){
-        super(message);
-        this.code = code;
-        this.details = details;
-        this.name = 'ServiceError';
-    }
 
-    static notFound(message, details){
-        return new ServiceError(NOT_FOUND, message, details);
-    }
+  constructor(code, message, details = {}){
+    super(message);
+    this.code = code;
+    this.details = details;
+    this.name = 'ServiceError';
+  }
 
-    static validationFailed(message, details){
-        return new ServiceError(VALIDATION_FAILED, message, details);
-    }
+  static notFound(message, details){
+    return new ServiceError(NOT_FOUND, message, details);
+  }
 
-    static unauthorized(message, details){
-        return new ServiceError(UNAUTHORIZED, message, details);
-    }
+  static validationFailed(message, details){
+    return new ServiceError(VALIDATION_FAILED, message, details);
+  }
 
-    static forbidden(message, details){
-        return new ServiceError(FORBIDDEN, message, details);
-    }
+  static unauthorized(message, details){
+    return new ServiceError(UNAUTHORIZED, message, details);
+  }
 
-    get isNotFound(){
-        return this.code === NOT_FOUND;
-    }
+  static forbidden(message, details){
+    return new ServiceError(FORBIDDEN, message, details);
+  }
 
-    get isValidationFailed(){
-        return this.code === VALIDATION_FAILED;
-    }
+  get isNotFound(){
+    return this.code === NOT_FOUND;
+  }
 
-    get isUnauthorized(){
-        return this.code === UNAUTHORIZED;
-    }
+  get isValidationFailed(){
+    return this.code === VALIDATION_FAILED;
+  }
 
-    get isForbidden(){
-        return this.code === FORBIDDEN;
-    }
+  get isUnauthorized(){
+    return this.code === UNAUTHORIZED;
+  }
 
-
+  get isForbidden(){
+    return this.code === FORBIDDEN;
+  }
 }
+
 module.exports = ServiceError;

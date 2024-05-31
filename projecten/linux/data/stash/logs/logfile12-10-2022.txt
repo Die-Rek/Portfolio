@@ -1,0 +1,5 @@
+[2022-12-09(12:00:02)] realtime opgehaald.
+[2022-12-09(12:00:02)] schrijfrechten afgenomen op encoded.
+[2022-12-09(12:00:02)] realtime data verwerkt.
+[2022-12-09(12:00:02)] data geplot op grafiek.
+[2022-12-09(12:00:02)] verslag aangemaakt.

@@ -1,0 +1,705 @@
+route_id,route_short_name,route_long_name
+1,BUS,Gand-Saint-Pierre -- Termonde
+10,BUS,Termonde -- Lokeren
+100,BUS,Bruxelles-Midi -- Braine-L Alleud
+101,BUS,Maubeuge (f) -- Charleroi-Central
+102,BUS,La Louviere-Sud -- Binche
+103,BUS,Neerpelt -- Hamont
+104,BUS,Petange -- Athus
+105,BUS,Lille Flandres(f) -- Mouscron
+106,IC,Anvers-Central -- Gand-Saint-Pierre
+107,IC,Gand-Saint-Pierre -- Alost
+108,P,Sint-Joris-Weert -- Gand-Saint-Pierre
+109,IC,Bruges -- Ostende
+11,BUS,Zottegem -- Grammont
+110,IC,Bruges -- Knokke
+111,IC,Deinze -- Poperinge
+112,IC,Ostende -- Lichtervelde
+113,IC,Ostende -- Courtrai
+114,IC,Deinze -- Courtrai
+115,IC,Bruges -- Audenarde
+116,L,Gand-Saint-Pierre -- Courtrai
+117,L,Audenarde -- Renaix
+118,IC,Deinze -- La Panne
+119,IC,Gand-Saint-Pierre -- Poperinge
+12,BUS,Gand-Saint-Pierre -- Schellebelle
+120,L,Anvers-Central -- Lierre
+121,IC,Anvers-Central -- Herentals
+122,EXTRA,Hasselt -- Landen
+123,L,Anvers-Noorderdokken -- Puurs
+124,L,Puurs -- Hoboken-Polder
+125,IC,Anvers-Central -- Aarschot
+126,IC,Anvers-Central -- Lierre
+127,IC,Anvers-Central -- Mol
+128,IC,Anvers-Berchem -- Mol
+129,L,Essen -- Heide
+13,BUS,Hal -- Ath
+130,L,Anvers-Central -- Puurs
+131,IC,Mol -- Neerpelt
+132,IC,Anvers-Central -- Louvain
+133,L,Essen -- Kapellen
+134,IC,Mol -- Hamont
+135,L,Anvers-Central -- Heist-Op-Den-Berg
+136,IC,Saint-Nicolas -- Courtrai
+137,IC,Saint-Trond -- Louvain
+138,IC,Tongres -- Liege-Guillemins
+139,L,Schaerbeek -- Louvain
+14,BUS,Audenarde -- Renaix
+140,IC,Anvers-Central -- Malines
+141,IC,Schaerbeek -- Anvers-Central
+142,IC,Brussels Airport - Zaventem -- Louvain
+143,IC,Brussels Airport - Zaventem -- Landen
+144,IC,Jette -- Termonde
+145,IC,Liege-Saint-Lambert -- Huy
+146,L,Libramont -- Bertrix
+147,IC,Bruxelles-Midi -- Ciney
+148,L,Ottignies -- Wavre
+149,IC,Dinant -- Yvoir
+15,BUS,Bruges -- Roulers
+150,IC,Liers -- Namur
+151,L,Mons -- Quevy
+152,IC,La Louviere-Sud -- Binche
+153,IC,Mons -- Mouscron
+154,IC,Tournai -- Ath
+155,L,Wavre -- Fleurus
+156,IC,Binche -- Braine-Le-Comte
+157,IC,Nivelles -- Charleroi-Central
+158,IC,Tournai -- Mouscron
+159,IC,Mons -- Tournai
+16,BUS,Gand-Saint-Pierre -- Grammont
+160,IC,Luttre -- Charleroi-Central
+161,IC,Mons -- Soignies
+162,IC,La Louviere-Sud -- Braine-Le-Comte
+163,IC,Mons -- Braine-Le-Comte
+164,IC,Nivelles -- Luttre
+165,IC,Liers -- Tamines
+166,IC,Namur -- Tamines
+167,IC,Charleroi-Central -- Mouscron
+168,IC,Tamines -- Mons
+169,L,Wavre -- Chatelet
+17,BUS,Gand-Saint-Pierre -- Audenarde
+170,IC,Tamines -- Mouscron
+171,IC,Bruxelles-Midi -- Enghien
+172,L,Bruxelles-Midi -- Nivelles
+173,IC,Mons -- La Louviere-Sud
+174,S34,Anvers-Central -- Saint-Nicolas
+175,S34,Anvers-Berchem -- Saint-Nicolas
+176,IC,Genk -- Bruges
+177,IC,Saint-Trond -- Bruges
+178,IC,Genk -- Blankenberge
+179,IC,Saint-Trond -- Blankenberge
+18,BUS,Audenarde -- Burst
+180,IC,Hasselt -- Blankenberge
+181,IC,Bruges -- Blankenberge
+182,IC,Hasselt -- Bruges
+183,S6,Schaerbeek -- Grammont
+184,S6,Schaerbeek -- Denderleeuw
+185,S6,Enghien -- Denderleeuw
+186,S6,Grammont -- Denderleeuw
+187,S6,Enghien -- Grammont
+188,L,Audenarde -- Zottegem
+189,L,Zottegem -- Courtrai
+19,BUS,Zottegem -- Courtrai
+190,L,Audenarde -- Courtrai
+191,IC,Liege-Guillemins -- Mons
+192,IC,Liege-Guillemins -- Quievrain
+193,IC,Bruxelles-Midi -- Charleroi-Central
+194,IC,Welkenraedt -- Eupen
+195,IC,Bruxelles-Midi -- Binche
+196,IC,Louvain -- Liege-Guillemins
+197,L,Hasselt -- Liers
+198,IC,Landen -- Liege-Guillemins
+199,L,Ottignies -- Louvain-La-Neuve
+2,BUS,Bruges -- Ostende
+20,BUS,Gand-Saint-Pierre -- Renaix
+200,IC,Schaerbeek -- Braine-Le-Comte
+201,IC,Bruxelles-Nord -- Bruxelles-Midi
+202,L,Pepinster -- Spa-Geronstere
+203,IC,Bruxelles-Nord -- Charleroi-Central
+204,L,Liege-Guillemins -- Marloie
+205,IC,Liege-Guillemins -- Saint-Ghislain
+206,IC,Liege-Guillemins -- Braine-Le-Comte
+207,S1,Bruxelles-Midi -- Anvers-Central
+208,S1,Nivelles -- Anvers-Central
+209,S1,Vilvorde -- Anvers-Central
+21,BUS,Deinze -- Lichtervelde
+210,S1,Schaerbeek -- Nivelles
+211,T,Ottignies -- Bruxelles-Midi
+212,T,Charleroi-Central -- Ath
+213,T,Schaerbeek -- Cambron-Casteau
+214,T,Mons -- Gand-Saint-Pierre
+215,IC,Anvers-Central -- Ostende
+216,T,Charleroi-Central -- Cambron-Casteau
+217,IC,Anvers-Berchem -- Ostende
+218,T,Dinant -- Houyet
+219,T,Liege-Guillemins -- Rochefort-Jemelle
+22,BUS,Gand-Saint-Pierre -- Lokeren
+220,T,Bruges -- Knokke
+221,IC,Anvers-Central -- Bruges
+222,EXP,Bruges -- Knokke
+223,EXP,Turnhout -- Blankenberge
+224,EXP,Anvers-Central -- Blankenberge
+225,EXP,Charleroi-Central -- Blankenberge
+226,EXP,Neerpelt -- Blankenberge
+227,EXP,Schaerbeek -- Blankenberge
+228,EXP,Tongres -- Ostende
+229,EXP,Rochefort-Jemelle -- Ostende
+23,BUS,Jette -- Alost
+230,EXP,Arlon -- Ostende
+231,IC,Ostende -- Saint-Nicolas
+232,EXP,Bruxelles-Nord -- La Panne
+233,EXP,Liege-Guillemins -- La Panne
+234,EXP,Hamont -- Louvain
+235,EXP,Herentals -- Louvain
+236,EXP,Herentals -- Mol
+237,EXTRA,Bruxelles-Midi -- Arlon
+238,EXTRA,Anvers-Central -- Noorderkempen (brecht)
+239,S52,Gand-Saint-Pierre -- Grammont
+24,BUS,Jette -- Denderleeuw
+240,P,Luxembourg (l) -- Arlon
+241,IC,Luxembourg (l) -- Arlon
+242,L,Maastricht (nl) -- Liege-Guillemins
+243,IC,Bruxelles-Midi -- Brussels Airport - Zaventem
+244,IC,Brussels Airport - Zaventem -- Tournai
+245,IC,Aulnoye Aymeries (f) -- Mons
+246,IC,Bruxelles-Midi -- Tournai
+247,S1,Anvers-Central -- Charleroi-Central
+248,S1,Bruxelles-Nord -- Nivelles
+249,IC,Lille Flandres(f) -- Courtrai
+25,BUS,Gand-Saint-Pierre -- Harelbeke
+250,S1,Bruxelles-Nord -- Bruxelles-Midi
+251,IC,Mouscron -- Courtrai
+252,S63,Maubeuge (f) -- Charleroi-Central
+253,S63,Erquelinnes -- Charleroi-Central
+254,IC,Maubeuge (f) -- Namur
+255,IC,Lille Flandres(f) -- Tournai
+256,IC,Bruxelles-Midi -- Essen
+257,IC,Essen -- Charleroi-Central
+258,IC,Anvers-Central -- Charleroi-Central
+259,S10,Bruxelles-Midi -- Alost
+26,BUS,Bruges -- Blankenberge
+260,S10,Ternat -- Bruxelles-Midi
+261,S10,Bruxelles-Midi -- Schellebelle
+262,S10,Termonde -- Alost
+263,IC,Luxembourg (l) -- Namur
+264,IC,Luxembourg (l) -- Bruxelles-Midi
+265,IC,Luxembourg (l) -- Bruxelles-Luxembourg
+266,IC,Bruxelles-Midi -- Arlon
+267,IC,Bruxelles-Midi -- Rochefort-Jemelle
+268,IC,Bruxelles-Midi -- Namur
+269,IC,Bruxelles-Luxembourg -- Namur
+27,BUS,Anvers-Central -- Saint-Nicolas
+270,IC,Bruxelles-Luxembourg -- Rochefort-Jemelle
+271,IC,Marloie -- Arlon
+272,IC,Luxembourg (l) -- Marloie
+273,IC,Rochefort-Jemelle -- Arlon
+274,S4,Malines -- Alost
+275,S4,Bruxelles-Luxembourg -- Malines
+276,IC,Tongres -- Gand-Saint-Pierre
+277,IC,Gand-Saint-Pierre -- Lokeren
+278,IC,Anderlecht -- Gand-Saint-Pierre
+279,IC,Schellebelle -- Lokeren
+28,BUS,Deinze -- Tielt
+280,IC,Gand-Saint-Pierre -- Termonde
+281,IC,Jette -- Gand-Saint-Pierre
+282,IC,Hasselt -- Gand-Saint-Pierre
+283,IC,Termonde -- Schellebelle
+284,IC,Termonde -- Lokeren
+285,S3,Audenarde -- Termonde
+286,S3,Termonde -- Zottegem
+287,S3,Schaerbeek -- Zottegem
+288,S3,Bruxelles-Nord -- Zottegem
+289,S3,Schaerbeek -- Burst
+29,BUS,Herentals -- Mol
+290,S3,Bruxelles-Nord -- Audenarde
+291,IC,Brussels Airport - Zaventem -- Courtrai
+292,IC,Anderlecht -- Courtrai
+293,IC,Brussels Airport - Zaventem -- Zottegem
+294,IC,Brussels Airport - Zaventem -- Burst
+295,IC,Brussels Airport - Zaventem -- Ostende
+296,IC,Courtrai -- Roulers
+297,IC,Anderlecht -- Ostende
+298,IC,Brussels Airport - Zaventem -- Bruges
+299,IC,Brussels Airport - Zaventem -- Roulers
+3,BUS,Alost -- Denderleeuw
+30,BUS,Anvers-Central -- Puurs
+300,IC,Bruxelles-Midi -- Ostende
+301,S32,Anvers-Central -- Essen
+302,S32,Essen -- Puurs
+303,S32,Anvers-Central -- Puurs
+304,IC,Liege-Saint-Lambert -- Namur
+305,IC,Bruxelles-Midi -- Liege-Saint-Lambert
+306,IC,Liege-Saint-Lambert -- Tournai
+307,IC,Liege-Saint-Lambert -- Ostende
+308,L,Genk -- Louvain
+309,L,Hasselt -- Louvain
+31,BUS,Malines -- Louvain
+310,L,Begijnendijk -- Hasselt
+311,IC,Namur -- Dinant
+312,IC,Bruxelles-Midi -- Dinant
+313,IC,Brussels Airport - Zaventem -- Dinant
+314,IC,Bruxelles-Luxembourg -- Dinant
+315,IC,Ottignies -- Dinant
+316,IC,Bruxelles-Midi -- Jambes
+317,IC,Ottignies -- Namur
+318,S32,Roosendaal (nl) -- Anvers-Central
+319,S32,Roosendaal (nl) -- Essen
+32,BUS,Louvain -- Waremme
+320,S32,Roosendaal (nl) -- Boom
+321,S32,Roosendaal (nl) -- Puurs
+322,S32,Roosendaal (nl) -- Anvers-Berchem
+323,S32,Roosendaal (nl) -- Kapellen
+324,S32,Anvers-Berchem -- Essen
+325,S32,Essen -- Kapellen
+326,IC,Anvers-Central -- Hasselt
+327,IC,Anvers-Central -- Tongres
+328,IC,Malines -- Louvain
+329,S34,Anvers-Central -- Termonde
+33,BUS,Hasselt -- Landen
+330,S34,Termonde -- Melsele
+331,S34,Anvers-Central -- Lokeren
+332,S34,Lokeren -- Melsele
+333,S34,Anvers-Berchem -- Lokeren
+334,S34,Saint-Nicolas -- Melsele
+335,L,Louvain -- Saint-Nicolas
+336,L,Malines -- Saint-Nicolas
+337,IC,Brussels Airport - Zaventem -- Knokke
+338,IC,Brussels Airport - Zaventem -- Gand-Saint-Pierre
+339,L,Anvers-Central -- Louvain
+34,BUS,Anvers-Berchem -- Puurs
+340,IC,Hasselt -- Liege-Guillemins
+341,IC,Anvers-Central -- Liege-Guillemins
+342,S33,Anvers-Central -- Mol
+343,IC,Gand-Saint-Pierre -- La Panne
+344,IC,Anvers-Central -- La Panne
+345,IC,La Panne -- Saint-Nicolas
+346,S20,Ottignies -- Louvain
+347,IC,Bruxelles-Midi -- Anvers-Central
+348,IC,Anvers-Berchem -- Charleroi-Central
+349,IC,Tournai -- Saint-Nicolas
+35,BUS,Louvain -- Landen
+350,IC,Mouscron -- Saint-Nicolas
+351,IC,Termonde -- Courtrai
+352,IC,Tournai -- Courtrai
+353,IC,Ath -- Courtrai
+354,IC,Ath -- Saint-Nicolas
+355,S9,Nivelles -- Landen
+356,S9,Nivelles -- Louvain
+357,S5,Malines -- Enghien
+358,S5,Malines -- Grammont
+359,S5,Hal -- Malines
+36,BUS,Roosendaal (nl) -- Anvers-Central
+360,IC,Turnhout -- Binche
+361,IC,Schaerbeek -- Binche
+362,IC,Turnhout -- La Louviere-Sud
+363,IC,Schaerbeek -- La Louviere-Sud
+364,S7,Vilvorde -- Hal
+365,S5,Bruxelles-Luxembourg -- Enghien
+366,IC,Bruxelles-Midi -- Landen
+367,IC,Landen -- Gand-Saint-Pierre
+368,IC,Louvain -- Gand-Saint-Pierre
+369,IC,Landen -- La Panne
+37,BUS,Hasselt -- Aarschot
+370,IC,Louvain -- La Panne
+371,S2,Louvain -- Braine-Le-Comte
+372,IC,Brussels Airport - Zaventem -- Mons
+373,IC,Hal -- Mons
+374,IC,Brussels Airport - Zaventem -- Soignies
+375,IC,Brussels Airport - Zaventem -- Enghien
+376,IC,Brussels Airport - Zaventem -- Quevy
+377,IC,Brussels Airport - Zaventem -- Braine-Le-Comte
+378,S2,Bruxelles-Midi -- Louvain
+379,S2,Bruxelles-Midi -- Braine-Le-Comte
+38,BUS,Landen -- Waremme
+380,IC,Herstal -- Mons
+381,IC,Liers -- Mons
+382,IC,Liers -- La Louviere-Sud
+383,IC,Liers -- Mouscron
+384,IC,Liers -- Saint-Ghislain
+385,IC,Namur -- Mouscron
+386,IC,Namur -- Mons
+387,IC,Namur -- La Louviere-Sud
+388,IC,Charleroi-Central -- Mons
+389,IC,Charleroi-Central -- La Louviere-Sud
+39,BUS,Hasselt -- Tongres
+390,IC,Herstal -- Charleroi-Central
+391,IC,Liers -- Charleroi-Central
+392,IC,Liege-Guillemins -- Charleroi-Central
+393,S10,Bruxelles-Midi -- Termonde
+394,S64,Charleroi-Central -- Couvin
+395,S8,Louvain-La-Neuve -- Audenarde
+396,S8,Louvain-La-Neuve -- Zottegem
+397,S8,Louvain-La-Neuve -- Bruxelles-Midi
+398,S8,Namur -- Zottegem
+399,S8,Ottignies -- Louvain-La-Neuve
+4,BUS,Opwijk -- Termonde
+40,BUS,Heist-Op-Den-Berg -- Aarschot
+400,S19,Bruxelles-Luxembourg -- Louvain
+401,S19,Nivelles -- Louvain
+402,S19,Hal -- Louvain
+403,S19,Bruxelles-Luxembourg -- Nivelles
+404,S19,Brussels Airport - Zaventem -- Charleroi-Central
+405,S19,Brussels Airport - Zaventem -- Louvain
+406,IC,Louvain -- Courtrai
+407,IC,Welkenraedt -- Courtrai
+408,L,Jurbise -- Braine-Le-Comte
+409,IC,Louvain -- Ostende
+41,BUS,Anvers-Central -- Essen
+410,IC,Louvain -- Termonde
+411,L,Malines -- Louvain
+412,S61,Jambes -- Charleroi-Central
+413,S61,Charleroi-Central -- Tamines
+414,S61,Ottignies -- Tamines
+415,IC,Anvers-Central -- Turnhout
+416,IC,Schaerbeek -- Courtrai
+417,IC,Herentals -- Turnhout
+418,IC,Lierre -- Turnhout
+419,S62,Luttre -- La Louviere-Sud
+42,BUS,Hasselt -- Liers
+420,S62,Luttre -- Charleroi-Central
+421,S62,Charleroi-Central -- La Louviere- Centre
+422,S62,Charleroi-Central -- La Louviere-Sud
+423,IC,Anvers-Central -- Hamont
+424,IC,Anvers-Central -- Neerpelt
+425,IC,Anvers-Berchem -- Hamont
+426,IC,Anvers-Berchem -- Neerpelt
+427,L,Binche -- Braine-Le-Comte
+428,L,La Louviere-Sud -- Braine-Le-Comte
+429,L,Charleroi-Central -- La Louviere- Centre
+43,BUS,Heist-Op-Den-Berg -- Louvain
+430,IC,Welkenraedt -- Ostende
+431,L,Hasselt -- Mol
+432,L,Mons -- La Louviere-Sud
+433,L,Charleroi-Central -- Mons
+434,IC,Bruxelles-Midi -- Anvers-Luchtbal
+435,IC,Anvers-Luchtbal -- Charleroi-Central
+436,S61,Namur -- Charleroi-Central
+437,S61,Ottignies -- Jambes
+438,S61,Wavre -- Jambes
+439,S61,Ottignies -- Namur
+44,BUS,Louvain -- Liege-Guillemins
+440,S61,Jambes -- Fleurus
+441,S61,Wavre -- Namur
+442,S61,Ottignies -- Charleroi-Central
+443,S61,Wavre -- Charleroi-Central
+444,S61,Ottignies -- Wavre
+445,S61,Basse-Wavre -- Namur
+446,S61,Sint-Joris-Weert -- Namur
+447,L,Mons -- Tournai
+448,L,Quevy -- Tournai
+449,L,Quevy -- Mouscron
+45,BUS,Anvers-Central -- Tongres
+450,L,Mons -- Quievrain
+451,L,Mons -- Mouscron
+452,L,Saint-Ghislain -- Quievrain
+453,L,Luxembourg (l) -- Athus
+454,L,Mons -- Grammont
+455,L,Quevy -- Grammont
+456,L,Jurbise -- Grammont
+457,L,Ath -- Grammont
+458,L,Liege-Guillemins -- Huy
+459,L,Liege-Guillemins -- Namur
+46,BUS,Louvain -- Ans
+460,L,Aachen Hbf (d) -- Welkenraedt
+461,L,Aachen Hbf (d) -- Spa-Geronstere
+462,L,Spa-Geronstere -- Welkenraedt
+463,IC,Eupen -- Ostende
+464,IC,Eupen -- Bruges
+465,IC,Bruxelles-Midi -- Courtrai
+466,S44,Liege-Guillemins -- Flemalle-Haute
+467,S44,Waremme -- Flemalle-Haute
+468,S44,Landen -- Liege-Guillemins
+469,S44,Liege-Guillemins -- Waremme
+47,BUS,Lierre -- Louvain
+470,IC,Welkenraedt -- Bruges
+471,IC,Liege-Guillemins -- Ostende
+472,S41,Herstal -- Verviers-Central
+473,S41,Liege-Guillemins -- Verviers-Central
+474,S41,Liege-Saint-Lambert -- Verviers-Central
+475,IC,Liege-Guillemins -- Bruges
+476,IC,Luxembourg (l) -- Gouvy
+477,IC,Clervaux (l) -- Liege-Guillemins
+478,IC,Luxembourg (l) -- Liege-Guillemins
+479,IC,Clervaux (l) -- Liers
+48,BUS,Lierre -- Aarschot
+480,IC,Luxembourg (l) -- Liers
+481,IC,Liers -- Gouvy
+482,IC,Liege-Guillemins -- Gouvy
+483,S43,Maastricht (nl) -- Liege-Guillemins
+484,S43,Maastricht (nl) -- Hasselt
+485,S43,Hasselt -- Tongres
+486,S43,Liege-Guillemins -- Vise
+487,S42,Liers -- Flemalle-Haute
+488,L,Malines -- Gand-Saint-Pierre
+489,L,Malines -- Bruges
+49,BUS,Tongres -- Aarschot
+490,L,Liers -- Marloie
+491,L,Bruges -- Gand-Saint-Pierre
+492,L,Liers -- Rochefort-Jemelle
+493,L,Malines -- Zeebrugge-Dorp
+494,L,Malines -- Zeebrugge-Strand
+495,L,Zeebrugge-Strand -- Gand-Saint-Pierre
+496,L,Bruges -- Zeebrugge-Strand
+497,S8,Bruxelles-Luxembourg -- Louvain-La-Neuve
+498,IC,Louvain -- Charleroi-Central
+499,IC,Louvain -- Fleurus
+5,BUS,Bruges -- Gand-Saint-Pierre
+50,IC,Audenarde -- Courtrai
+500,IC,Ottignies -- Charleroi-Central
+501,ICT,Louvain -- Charleroi-Central
+502,L,Namur -- Ciney
+503,L,Zeebrugge-Dorp -- Termonde
+504,L,Zeebrugge-Strand -- Termonde
+505,L,Luxembourg (l) -- Arlon
+506,L,Libramont -- Arlon
+507,L,Malines -- Termonde
+508,L,Namur -- Libramont
+509,L,Namur -- Beauraing
+51,IC,Ostende -- Audenarde
+510,L,Yvoir -- Libramont
+511,L,Namur -- Bertrix
+512,L,Namur -- Dinant
+513,L,Rochefort-Jemelle -- Ciney
+514,L,Namur -- Rochefort-Jemelle
+515,L,Ottignies -- Namur
+516,L,Ottignies -- Rhisnes
+517,S20,Ottignies -- Wavre
+518,S53,Gand-Saint-Pierre -- Lokeren
+519,S8,Bruxelles-Luxembourg -- Ottignies
+52,BUS,Anvers-Central -- Hasselt
+520,S8,Ottignies -- Bruxelles-Midi
+521,S53,Anvers-Central -- Gand-Saint-Pierre
+522,S53,Gand-Saint-Pierre -- Melsele
+523,S53,Anvers-Berchem -- Gand-Saint-Pierre
+524,S6,Bruxelles-Midi -- Grammont
+525,S35,Anvers-Central -- Noorderkempen (brecht)
+526,L,Liege-Saint-Lambert -- Verviers-Central
+527,S53,Anvers-Central -- Lokeren
+528,S53,Anvers-Berchem -- Lokeren
+529,P,Schaerbeek -- Ostende
+53,BUS,Bruxelles-Nord -- Malines
+530,P,Schaerbeek -- La Panne
+531,P,Schaerbeek -- Poperinge
+532,P,Gand-Saint-Pierre -- Alost
+533,P,Schaerbeek -- Gand-Saint-Pierre
+534,P,Schaerbeek -- Saint-Nicolas
+535,IC,Anvers-Central -- Poperinge
+536,IC,Saint-Nicolas -- Poperinge
+537,IC,Anvers-Central -- Courtrai
+538,IC,Anvers-Central -- Lokeren
+539,P,Bruges -- Gand-Saint-Pierre
+54,BUS,Vilvorde -- Bruxelles-Luxembourg
+540,P,Bruges -- Zeebrugge-Dorp
+541,P,Bruges -- Knokke
+542,P,Courtrai -- Poperinge
+543,S51,Gand-Saint-Pierre -- Eeklo
+544,P,Louvain -- Saint-Nicolas
+545,P,Malines -- Saint-Nicolas
+546,P,Gand-Saint-Pierre -- Termonde
+547,P,Malines -- Termonde
+548,S3,Bruxelles-Midi -- Termonde
+549,P,Louvain -- Termonde
+55,BUS,Bruxelles-Midi -- Hal
+550,P,Bruxelles-Midi -- Mol
+551,P,Bruxelles-Midi -- Neerpelt
+552,P,Anvers-Central -- Noorderkempen (brecht)
+553,P,Noorderkempen (brecht) -- Anvers-Berchem
+554,P,Brussels Airport - Zaventem -- Noorderkempen (brecht)
+555,P,Anvers-Central -- Essen
+556,S33,Anvers-Central -- Herentals
+557,S33,Lierre -- Herentals
+558,P,Lierre -- Herentals
+559,P,Anvers-Central -- Aarschot
+56,BUS,Bruxelles-Midi -- Louvain
+560,P,Anvers-Central -- Louvain
+561,P,Bruxelles-Midi -- Landen
+562,P,Bruxelles-Midi -- Genk
+563,P,Bruxelles-Midi -- Saint-Trond
+564,P,Bruxelles-Midi -- Tongres
+565,P,Genk -- Louvain
+566,P,Hasselt -- Genk
+567,P,Bruxelles-Midi -- Brussels Airport - Zaventem
+568,P,Hasselt -- Louvain
+569,P,Malines -- Hasselt
+57,BUS,Bruxelles-Nord -- Louvain
+570,P,Malines -- Louvain
+571,P,Bruxelles-Midi -- Liege-Guillemins
+572,P,Bruxelles-Midi -- Vise
+573,P,Liege-Guillemins -- Vise
+574,P,Vise -- Braine-Le-Comte
+575,P,Liege-Guillemins -- Verviers-Central
+576,S41,Herstal -- Welkenraedt
+577,P,Liege-Guillemins -- Statte
+578,P,Liege-Guillemins -- Gouvy
+579,P,Huy -- Namur
+58,BUS,Bruxelles-Midi -- Nivelles
+580,P,Liege-Saint-Lambert -- Bomal
+581,P,Liege-Guillemins -- Bomal
+582,P,Verviers-Central -- Spa-Geronstere
+583,P,Tournai -- Mouscron
+584,P,Schaerbeek -- Mouscron
+585,S51,Renaix -- Eeklo
+586,P,Mons -- Tournai
+587,P,Mons -- Ath
+588,P,Jurbise -- Ath
+589,P,Ath -- Grammont
+59,BUS,Namur -- Ciney
+590,P,Mons -- Grammont
+591,P,Namur -- Rochefort-Jemelle
+592,P,Bruxelles-Midi -- Rochefort-Jemelle
+593,P,Bruxelles-Midi -- Namur
+594,P,Bruxelles-Midi -- Gembloux
+595,P,Luxembourg (l) -- Namur
+596,P,Luxembourg (l) -- Bruxelles-Midi
+597,P,Ottignies -- Gembloux
+598,P,Gembloux -- Namur
+599,P,Ottignies -- Rhisnes
+6,BUS,Audenarde -- Zottegem
+60,BUS,Rhisnes -- Namur
+600,P,Ottignies -- Namur
+601,S81,Schaerbeek -- Louvain-La-Neuve
+602,S81,Schaerbeek -- Ottignies
+603,P,Arlon -- Virton
+604,P,Bertrix -- Arlon
+605,P,Namur -- Ciney
+606,P,Rochefort-Jemelle -- Libramont
+607,P,Liege-Saint-Lambert -- Rochefort-Jemelle
+608,P,Liege-Guillemins -- Marloie
+609,P,Ciney -- Libramont
+61,BUS,Marloie -- Ciney
+610,P,Libramont -- Bertrix
+611,P,Dinant -- Bertrix
+612,P,Namur -- Bertrix
+613,P,Libramont -- Arlon
+614,P,Libramont -- Gedinne
+615,P,Libramont -- Virton
+616,P,Gembloux -- Tamines
+617,P,Gembloux -- Jemeppe-Sur-Sambre
+618,S51,Gand-Saint-Pierre -- Renaix
+619,P,Schaerbeek -- Jemeppe-Sur-Sambre
+62,BUS,Liege-Saint-Lambert -- Statte
+620,P,Schaerbeek -- Chatelet
+621,P,Schaerbeek -- Binche
+622,P,Charleroi-Central -- Couvin
+623,P,Charleroi-Central -- Walcourt
+624,S62,Luttre -- Manage
+625,P,Luttre -- Charleroi-Central
+626,P,Mons -- La Louviere-Sud
+627,P,Mons -- Quevy
+628,P,Quevy -- Manage
+629,P,Manage -- Braine-Le-Comte
+63,BUS,Maastricht (nl) -- Vise
+630,P,Schaerbeek -- Quievrain
+631,P,Schaerbeek -- Mons
+632,P,Schaerbeek -- Quevy
+633,P,Saint-Ghislain -- Quievrain
+634,P,Mons -- Saint-Ghislain
+635,P,Ostende -- Courtrai
+636,P,Blankenberge -- Courtrai
+637,P,Bruges -- Courtrai
+638,P,Knokke -- Courtrai
+639,S51,Audenarde -- Eeklo
+64,BUS,Maastricht (nl) -- Liege-Guillemins
+640,P,Grammont -- Denderleeuw
+641,P,Zottegem -- Courtrai
+642,P,Audenarde -- Grammont
+643,P,Renaix -- Grammont
+644,P,Gand-Saint-Pierre -- Grammont
+645,S52,Zottegem -- Grammont
+646,P,Alost -- Burst
+647,P,Courtrai -- Roulers
+648,P,Gand-Saint-Pierre -- Courtrai
+649,P,Gand-Saint-Pierre -- La Panne
+65,BUS,Huy -- Namur
+650,P,Louvain -- La Panne
+651,IC,Bruges -- Courtrai
+652,P,Zeebrugge-Dorp -- Gand-Saint-Pierre
+653,P,Bruges -- Blankenberge
+654,P,Mol -- Hamont
+655,P,Herentals -- Heverlee
+656,P,Hamont -- Heverlee
+657,P,Mol -- Heverlee
+658,P,Lierre -- Heverlee
+659,P,Essen -- Heverlee
+66,BUS,Beauraing -- Bertrix
+660,P,Anvers-Central -- Heverlee
+661,P,Hasselt -- Gand-Saint-Pierre
+662,P,Tongres -- Gand-Saint-Pierre
+663,P,Bruxelles-Midi -- Hasselt
+664,P,Louvain -- Landen
+665,IC,Hasselt -- Genk
+666,S41,Liege-Saint-Lambert -- Eupen
+667,P,Liege-Guillemins -- Namur
+668,P,Louvain-La-Neuve -- Mouscron
+669,P,Bruxelles-Luxembourg -- Mouscron
+67,BUS,Wavre -- Sint-Joris-Weert
+670,L,Malines -- Courtrai
+671,P,Mons -- Quievrain
+672,L,Londerzeel -- Courtrai
+673,P,Tournai -- Ath
+674,P,Bruxelles-Midi -- Arlon
+675,P,Ottignies -- Arlon
+676,P,Herstal -- Arlon
+677,P,Namur -- Arlon
+678,P,Herstal -- Rochefort-Jemelle
+679,P,Marloie -- Libramont
+68,BUS,Ciney -- Arlon
+680,P,Namur -- Libramont
+681,P,Louvain-La-Neuve -- Binche
+682,P,Ottignies -- Binche
+683,L,Termonde -- Courtrai
+684,P,Mons -- Manage
+685,P,Schaerbeek -- Saint-Ghislain
+686,P,Sint-Joris-Weert -- Poperinge
+687,P,Louvain -- Poperinge
+688,P,Schaerbeek -- Courtrai
+689,S3,Schaerbeek -- Courtrai
+69,BUS,Rochefort-Jemelle -- Ciney
+690,P,Zottegem -- Poperinge
+691,S52,Gand-Saint-Pierre -- Zottegem
+692,P,Alost -- Grammont
+693,S6,Alost -- Grammont
+694,P,Gand-Saint-Pierre -- Denderleeuw
+695,P,Gand-Saint-Pierre -- Lichtervelde
+696,IC,Namur -- Charleroi-Central
+697,IC,Namur -- Courtrai
+698,IC,Namur -- Tournai
+699,IC,Amsterdam Cs (nl) -- Bruxelles-Midi
+7,BUS,Bruges -- Knokke
+70,BUS,Wavre -- Louvain
+700,IC,Rotterdam Cs (nl) -- Bruxelles-Midi
+701,IC,Schiphol (nl) -- Bruxelles-Midi
+702,L,Rochefort-Jemelle -- Libramont
+703,L,Marloie -- Libramont
+704,L,Liers -- Libramont
+71,BUS,Ottignies -- Sint-Joris-Weert
+72,BUS,Liege-Guillemins -- Liege-Saint-Lambert
+73,BUS,Ottignies -- Namur
+74,BUS,Ottignies -- Ciney
+75,BUS,Marloie -- Bomal
+76,BUS,Rochefort-Jemelle -- Bomal
+77,BUS,Rivage -- Marloie
+78,BUS,Landen -- Ans
+79,BUS,Mons -- Quevy
+8,BUS,Audenarde -- Denderleeuw
+80,BUS,Mons -- La Louviere-Sud
+81,BUS,La Louviere-Sud -- Braine-Le-Comte
+82,BUS,Hal -- Tournai
+83,BUS,Namur -- Tamines
+84,BUS,Mons -- Braine-Le-Comte
+85,IC,Saint-Ghislain -- Tournai
+86,IC,Saint-Ghislain -- Mouscron
+87,BUS,Mons -- Soignies
+88,BUS,Saint-Ghislain -- Tournai
+89,BUS,Mons -- Saint-Ghislain
+9,BUS,Gand-Saint-Pierre -- Deinze
+90,BUS,Enghien -- Ath
+91,BUS,Charleroi-Central -- Couvin
+92,BUS,Charleroi-Central -- La Louviere-Sud
+93,BUS,Erquelinnes -- Charleroi-Central
+94,BUS,Hal -- Braine-Le-Comte
+95,BUS,Binche -- Braine-Le-Comte
+96,BUS,Mons -- Jurbise
+97,BUS,Braine-Le-Comte -- Soignies
+98,BUS,Hal -- Mons
+99,BUS,Ottignies -- Fleurus
